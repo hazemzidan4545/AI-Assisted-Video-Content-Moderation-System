@@ -39,8 +39,6 @@ Implimentation/
   eval_logs/                     Experiment summaries and metrics
 media/
   system-demo.mp4                README demo video
-reports/
-  thesis_evidence_bundle/        Thesis evidence files and metric summaries
 ```
 
 ## Run The Streamlit Demo
