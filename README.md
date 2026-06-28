@@ -4,7 +4,7 @@ An end-to-end computer vision prototype for detecting unsafe visual content in v
 
 ## Demo
 
-<video src="media/system-demo.mp4" controls width="100%" title="System demo"></video>
+[![System demo preview](media/system-demo-preview.gif)](media/system-demo.mp4)
 
 [Watch the system demo video](media/system-demo.mp4)
 
