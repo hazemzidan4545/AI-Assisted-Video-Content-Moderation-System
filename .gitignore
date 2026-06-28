@@ -33,6 +33,7 @@ Implimentation/suspicious_output/
 *.avi
 *.mkv
 *.webm
+!media/system-demo.mp4
 
 # Duplicate/local exploratory notebooks and old package exports
 /PORNMODULE.ipynb
