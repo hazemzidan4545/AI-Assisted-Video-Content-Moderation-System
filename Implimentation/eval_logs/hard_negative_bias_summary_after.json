@@ -1,0 +1,13 @@
+{
+  "checkpoint_path": "checkpoints/convnext_sexynude_hardneg_best.pt",
+  "total_images": 813,
+  "skipped_batches": 0,
+  "predicted_normal_count": 782,
+  "predicted_sexy_count": 13,
+  "predicted_nude_count": 18,
+  "predicted_unsafe_count": 31,
+  "predicted_unsafe_percent": 3.8130381303813037,
+  "mean_prob_normal": 0.9369783189746541,
+  "mean_prob_sexy": 0.02296871220288651,
+  "mean_prob_nude": 0.040052967716123704
+}

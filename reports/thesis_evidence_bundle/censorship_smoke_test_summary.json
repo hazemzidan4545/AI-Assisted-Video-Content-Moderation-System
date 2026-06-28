@@ -1,0 +1,20 @@
+{
+  "input_video_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/uploads/Boobs_and_Heavenly_Areolas_Vol.50_20260602_032027.mp4",
+  "output_video_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/outputs/censored/Boobs_and_Heavenly_Areolas_Vol.50_20260602_032027_censored.mp4",
+  "output_exists_yes_no": true,
+  "total_frames": 18001,
+  "FPS": 30.0,
+  "clip_window_size": 4.0,
+  "stride": 2.0,
+  "total_windows": 300,
+  "unsafe_windows": 282,
+  "safe_windows": 18,
+  "percentage_unsafe": 94.0,
+  "threshold_used": 0.5,
+  "blur_type_used": "pixelate",
+  "whether_audio_was_preserved": true,
+  "processing_time": 279.75594525599445,
+  "warnings_printed_by_notebook_or_script": "NOT_FOUND",
+  "warning_condition_from_summary": "percent_windows_marked_unsafe > 80",
+  "source_log_file": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/outputs/censored/Boobs_and_Heavenly_Areolas_Vol.50_20260602_032027_summary.json"
+}

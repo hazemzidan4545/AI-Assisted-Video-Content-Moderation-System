@@ -1,0 +1,2 @@
+epoch,train_loss,val_mae,val_macro_f1,best_t1,best_t2,class0_precision,class0_recall,class0_f1,class1_precision,class1_recall,class1_f1,class2_precision,class2_recall,class2_f1,score_mean_true0,score_mean_true1,score_mean_true2,score_std,peak_cuda_memory_gb,confusion_matrix
+1,0.2233327443414927,0.7390788197517395,0.40772105158423066,0.4,1.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2920936942100525,0.5863989591598511,0.7175069451332092,0.6357807517051697,0.2645688056945801,"[[40, 6, 3], [36, 10, 12], [22, 4, 15]]"

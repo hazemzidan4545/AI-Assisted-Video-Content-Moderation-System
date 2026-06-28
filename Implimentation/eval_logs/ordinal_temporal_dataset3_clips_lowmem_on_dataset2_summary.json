@@ -1,0 +1,261 @@
+{
+  "checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/ordinal_temporal_dataset3_clips_lowmem_best.pt",
+  "checkpoint_epoch": 7,
+  "checkpoint_dataset3_endpoint_macro_f1": 0.8377010125074449,
+  "dataset2_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 2/censora_movies_tvshows_dataset",
+  "evaluated_count": 738,
+  "skipped_batch_count": 3,
+  "dataset2_label_counts": {
+    "0": 312,
+    "1": 177,
+    "2": 249
+  },
+  "primary_thresholds_from_checkpoint": {
+    "t1": 0.4,
+    "t2": 1.4
+  },
+  "primary_macro_f1": 0.33644947333310893,
+  "primary_accuracy": 0.45121951219512196,
+  "classification_report": {
+    "Normal": {
+      "precision": 0.4697754749568221,
+      "recall": 0.8717948717948718,
+      "f1-score": 0.6105499438832772,
+      "support": 312.0
+    },
+    "Medium": {
+      "precision": 0.32727272727272727,
+      "recall": 0.1016949152542373,
+      "f1-score": 0.15517241379310345,
+      "support": 177.0
+    },
+    "Extreme": {
+      "precision": 0.41346153846153844,
+      "recall": 0.17269076305220885,
+      "f1-score": 0.24362606232294617,
+      "support": 249.0
+    },
+    "accuracy": 0.45121951219512196,
+    "macro avg": {
+      "precision": 0.4035032468970292,
+      "recall": 0.38206018336710595,
+      "f1-score": 0.33644947333310893,
+      "support": 738.0
+    },
+    "weighted avg": {
+      "precision": 0.41659775608499233,
+      "recall": 0.45121951219512196,
+      "f1-score": 0.3775338607742214,
+      "support": 738.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      272,
+      18,
+      22
+    ],
+    [
+      120,
+      18,
+      39
+    ],
+    [
+      187,
+      19,
+      43
+    ]
+  ],
+  "score_distribution_by_true_class": {
+    "0": {
+      "count": 312,
+      "mean": 0.21410155296325684,
+      "std": 0.47473418712615967,
+      "min": -0.0478515625,
+      "max": 2.029296875
+    },
+    "1": {
+      "count": 177,
+      "mean": 0.5455005168914795,
+      "std": 0.7534595727920532,
+      "min": -0.05291748046875,
+      "max": 2.09765625
+    },
+    "2": {
+      "count": 249,
+      "mean": 0.4302677512168884,
+      "std": 0.6997804641723633,
+      "min": -0.08135986328125,
+      "max": 2.123046875
+    }
+  },
+  "threshold_sweep_diagnostic": [
+    {
+      "t1": 0.4,
+      "t2": 1.4,
+      "macro_f1": 0.33644947333310893,
+      "accuracy": 0.45121951219512196,
+      "confusion_matrix": [
+        [
+          272,
+          18,
+          22
+        ],
+        [
+          120,
+          18,
+          39
+        ],
+        [
+          187,
+          19,
+          43
+        ]
+      ],
+      "class0_f1": 0.6105499438832772,
+      "class1_f1": 0.15517241379310345,
+      "class2_f1": 0.24362606232294617
+    },
+    {
+      "t1": 0.5,
+      "t2": 1.5,
+      "macro_f1": 0.33053632865806654,
+      "accuracy": 0.44850948509485095,
+      "confusion_matrix": [
+        [
+          273,
+          20,
+          19
+        ],
+        [
+          122,
+          17,
+          38
+        ],
+        [
+          189,
+          19,
+          41
+        ]
+      ],
+      "class0_f1": 0.609375,
+      "class1_f1": 0.1459227467811159,
+      "class2_f1": 0.23631123919308358
+    },
+    {
+      "t1": 0.55,
+      "t2": 1.45,
+      "macro_f1": 0.3320355295633382,
+      "accuracy": 0.45121951219512196,
+      "confusion_matrix": [
+        [
+          274,
+          17,
+          21
+        ],
+        [
+          122,
+          16,
+          39
+        ],
+        [
+          191,
+          15,
+          43
+        ]
+      ],
+      "class0_f1": 0.6095661846496107,
+      "class1_f1": 0.14222222222222222,
+      "class2_f1": 0.24431818181818182
+    },
+    {
+      "t1": 0.6,
+      "t2": 1.6,
+      "macro_f1": 0.33544973544973544,
+      "accuracy": 0.45121951219512196,
+      "confusion_matrix": [
+        [
+          275,
+          21,
+          16
+        ],
+        [
+          122,
+          21,
+          34
+        ],
+        [
+          191,
+          21,
+          37
+        ]
+      ],
+      "class0_f1": 0.6111111111111112,
+      "class1_f1": 0.175,
+      "class2_f1": 0.22023809523809523
+    },
+    {
+      "t1": 0.65,
+      "t2": 1.55,
+      "macro_f1": 0.3266542876125229,
+      "accuracy": 0.44986449864498645,
+      "confusion_matrix": [
+        [
+          277,
+          18,
+          17
+        ],
+        [
+          124,
+          16,
+          37
+        ],
+        [
+          192,
+          18,
+          39
+        ]
+      ],
+      "class0_f1": 0.6121546961325967,
+      "class1_f1": 0.13973799126637554,
+      "class2_f1": 0.22807017543859648
+    }
+  ],
+  "best_dataset2_threshold_diagnostic": {
+    "t1": 0.4,
+    "t2": 1.4,
+    "macro_f1": 0.33644947333310893,
+    "accuracy": 0.45121951219512196,
+    "confusion_matrix": [
+      [
+        272,
+        18,
+        22
+      ],
+      [
+        120,
+        18,
+        39
+      ],
+      [
+        187,
+        19,
+        43
+      ]
+    ],
+    "class0_f1": 0.6105499438832772,
+    "class1_f1": 0.15517241379310345,
+    "class2_f1": 0.24362606232294617
+  },
+  "seq_len": 16,
+  "roi_enabled": false,
+  "matched_preprocessing": true,
+  "transform_description": {
+    "backbone_reference": "fast_transform_rgb224",
+    "matched_preprocessing": true,
+    "normalization": "none",
+    "pixel_range": "[0, 1]",
+    "eval": "Resize((224,224)) + ToTensor"
+  },
+  "note": "Primary result uses thresholds saved in the Dataset 3 clips checkpoint. Dataset 2 threshold sweep is diagnostic only."
+}

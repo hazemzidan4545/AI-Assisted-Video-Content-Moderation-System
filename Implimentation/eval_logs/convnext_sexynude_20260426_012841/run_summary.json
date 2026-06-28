@@ -1,0 +1,10 @@
+{
+  "run_timestamp": "20260426_012841",
+  "epochs": 15,
+  "best_epoch": 9,
+  "primary_metric": "macro_f2",
+  "best_macro_f2": 0.8700079218073976,
+  "best_model_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/convnext_sexynude_best.pt",
+  "latest_model_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/convnext_sexynude_latest.pt",
+  "results_dir": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/convnext_sexynude_20260426_012841"
+}

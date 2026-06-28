@@ -1,0 +1,98 @@
+{
+  "best_epoch": 8,
+  "best_macro_f1": 0.4320808680913005,
+  "classification_report": {
+    "Normal": {
+      "precision": 0.5576923076923077,
+      "recall": 0.5918367346938775,
+      "f1-score": 0.5742574257425742,
+      "support": 49.0
+    },
+    "Medium": {
+      "precision": 0.6,
+      "recall": 0.15517241379310345,
+      "f1-score": 0.2465753424657534,
+      "support": 58.0
+    },
+    "Extreme": {
+      "precision": 0.35802469135802467,
+      "recall": 0.7073170731707317,
+      "f1-score": 0.47540983606557374,
+      "support": 41.0
+    },
+    "accuracy": 0.4527027027027027,
+    "macro avg": {
+      "precision": 0.5052389996834441,
+      "recall": 0.48477540721923756,
+      "f1-score": 0.4320808680913005,
+      "support": 148.0
+    },
+    "weighted avg": {
+      "precision": 0.5189590231256898,
+      "recall": 0.4527027027027027,
+      "f1-score": 0.41845802029113754,
+      "support": 148.0
+    }
+  },
+  "classification_report_text": "              precision    recall  f1-score   support\n\n      Normal     0.5577    0.5918    0.5743        49\n      Medium     0.6000    0.1552    0.2466        58\n     Extreme     0.3580    0.7073    0.4754        41\n\n    accuracy                         0.4527       148\n   macro avg     0.5052    0.4848    0.4321       148\nweighted avg     0.5190    0.4527    0.4185       148\n",
+  "confusion_matrix": [
+    [
+      29,
+      2,
+      18
+    ],
+    [
+      15,
+      9,
+      34
+    ],
+    [
+      8,
+      4,
+      29
+    ]
+  ],
+  "checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/temporal_hardneg_matched_preprocess_stage3_best.pt",
+  "backbone_checkpoint": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/convnext_sexynude_hardneg_best.pt",
+  "seq_len": 16,
+  "roi_enabled": false,
+  "encoder_frozen": false,
+  "stage3_unfrozen": true,
+  "matched_preprocessing": true,
+  "transform_description": {
+    "backbone_reference": "fast_transform_rgb224",
+    "backbone_reference_behavior": "RGB, resize 224x224, float tensor in [0,1], no ImageNet normalization",
+    "train": "RandomResizedCrop(224, scale=(0.8,1.0)) + RandomHorizontalFlip + ColorJitter(0.3,0.3,0.3) + ToTensor",
+    "validation": "Resize((224,224)) + ToTensor",
+    "imagenet_normalization": false
+  },
+  "class_weights": [
+    0.7515842914581299,
+    1.9932773113250732,
+    0.9368088245391846
+  ],
+  "label_smoothing": 0.1,
+  "temporal_dropout_enabled": true,
+  "temporal_dropout_prob": 0.5,
+  "temporal_dropout_fraction": "T//6",
+  "optimizer_head_lr": 0.0003,
+  "optimizer_encoder_lr": 1e-05,
+  "first_batch_value_stats": {
+    "min": 0.01568627543747425,
+    "max": 0.6235294342041016,
+    "mean": 0.2564999461174011,
+    "std": 0.13926680386066437
+  },
+  "trainable_encoder_param_count": 15470592,
+  "trainable_head_param_count": 1479172,
+  "train_class_counts": {
+    "0": 263,
+    "1": 119,
+    "2": 211
+  },
+  "val_class_counts": {
+    "0": 49,
+    "1": 58,
+    "2": 41
+  }
+}

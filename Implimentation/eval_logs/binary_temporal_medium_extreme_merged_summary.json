@@ -1,0 +1,351 @@
+{
+  "best_epoch": 9,
+  "best_macro_f1": 0.6856447184375485,
+  "best_threshold": 0.55,
+  "best_recall_oriented_threshold": 0.55,
+  "classification_report": {
+    "Safe": {
+      "precision": 0.5833333333333334,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.5773195876288659,
+      "support": 49.0
+    },
+    "Unsafe": {
+      "precision": 0.79,
+      "recall": 0.797979797979798,
+      "f1-score": 0.7939698492462312,
+      "support": 99.0
+    },
+    "accuracy": 0.722972972972973,
+    "macro avg": {
+      "precision": 0.6866666666666668,
+      "recall": 0.6847041847041847,
+      "f1-score": 0.6856447184375485,
+      "support": 148.0
+    },
+    "weighted avg": {
+      "precision": 0.7215765765765767,
+      "recall": 0.722972972972973,
+      "f1-score": 0.7222410464134549,
+      "support": 148.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      28,
+      21
+    ],
+    [
+      20,
+      79
+    ]
+  ],
+  "unsafe_precision": 0.79,
+  "unsafe_recall": 0.797979797979798,
+  "safe_precision": 0.5833333333333334,
+  "safe_recall": 0.5714285714285714,
+  "original_label_error_breakdown": {
+    "original0_to_unsafe": 21,
+    "original1_to_safe": 14,
+    "original2_to_safe": 6,
+    "medium_total": 58,
+    "extreme_total": 41,
+    "medium_unsafe_recall": 0.7586206896551724,
+    "extreme_unsafe_recall": 0.8536585365853658
+  },
+  "threshold_rows": [
+    {
+      "threshold": 0.3,
+      "macro_f1": 0.6503862606141863,
+      "accuracy": 0.75,
+      "safe_precision": 0.8,
+      "safe_recall": 0.32653061224489793,
+      "safe_f1": 0.463768115942029,
+      "unsafe_precision": 0.7421875,
+      "unsafe_recall": 0.9595959595959596,
+      "unsafe_f1": 0.8370044052863436,
+      "confusion_matrix": [
+        [
+          16,
+          33
+        ],
+        [
+          4,
+          95
+        ]
+      ],
+      "original_label_error_breakdown": {
+        "original0_to_unsafe": 33,
+        "original1_to_safe": 3,
+        "original2_to_safe": 1,
+        "medium_total": 58,
+        "extreme_total": 41,
+        "medium_unsafe_recall": 0.9482758620689655,
+        "extreme_unsafe_recall": 0.975609756097561
+      }
+    },
+    {
+      "threshold": 0.35,
+      "macro_f1": 0.6386854460093897,
+      "accuracy": 0.7364864864864865,
+      "safe_precision": 0.7272727272727273,
+      "safe_recall": 0.32653061224489793,
+      "safe_f1": 0.4507042253521127,
+      "unsafe_precision": 0.7380952380952381,
+      "unsafe_recall": 0.9393939393939394,
+      "unsafe_f1": 0.8266666666666667,
+      "confusion_matrix": [
+        [
+          16,
+          33
+        ],
+        [
+          6,
+          93
+        ]
+      ],
+      "original_label_error_breakdown": {
+        "original0_to_unsafe": 33,
+        "original1_to_safe": 4,
+        "original2_to_safe": 2,
+        "medium_total": 58,
+        "extreme_total": 41,
+        "medium_unsafe_recall": 0.9310344827586207,
+        "extreme_unsafe_recall": 0.9512195121951219
+      }
+    },
+    {
+      "threshold": 0.4,
+      "macro_f1": 0.6396396396396397,
+      "accuracy": 0.7297297297297297,
+      "safe_precision": 0.68,
+      "safe_recall": 0.3469387755102041,
+      "safe_f1": 0.4594594594594595,
+      "unsafe_precision": 0.7398373983739838,
+      "unsafe_recall": 0.9191919191919192,
+      "unsafe_f1": 0.8198198198198198,
+      "confusion_matrix": [
+        [
+          17,
+          32
+        ],
+        [
+          8,
+          91
+        ]
+      ],
+      "original_label_error_breakdown": {
+        "original0_to_unsafe": 32,
+        "original1_to_safe": 5,
+        "original2_to_safe": 3,
+        "medium_total": 58,
+        "extreme_total": 41,
+        "medium_unsafe_recall": 0.9137931034482759,
+        "extreme_unsafe_recall": 0.926829268292683
+      }
+    },
+    {
+      "threshold": 0.45,
+      "macro_f1": 0.6175710594315245,
+      "accuracy": 0.6959459459459459,
+      "safe_precision": 0.5625,
+      "safe_recall": 0.3673469387755102,
+      "safe_f1": 0.4444444444444444,
+      "unsafe_precision": 0.7327586206896551,
+      "unsafe_recall": 0.8585858585858586,
+      "unsafe_f1": 0.7906976744186046,
+      "confusion_matrix": [
+        [
+          18,
+          31
+        ],
+        [
+          14,
+          85
+        ]
+      ],
+      "original_label_error_breakdown": {
+        "original0_to_unsafe": 31,
+        "original1_to_safe": 10,
+        "original2_to_safe": 4,
+        "medium_total": 58,
+        "extreme_total": 41,
+        "medium_unsafe_recall": 0.8275862068965517,
+        "extreme_unsafe_recall": 0.9024390243902439
+      }
+    },
+    {
+      "threshold": 0.5,
+      "macro_f1": 0.6825606335588187,
+      "accuracy": 0.7364864864864865,
+      "safe_precision": 0.631578947368421,
+      "safe_recall": 0.4897959183673469,
+      "safe_f1": 0.5517241379310345,
+      "unsafe_precision": 0.7727272727272727,
+      "unsafe_recall": 0.8585858585858586,
+      "unsafe_f1": 0.8133971291866029,
+      "confusion_matrix": [
+        [
+          24,
+          25
+        ],
+        [
+          14,
+          85
+        ]
+      ],
+      "original_label_error_breakdown": {
+        "original0_to_unsafe": 25,
+        "original1_to_safe": 10,
+        "original2_to_safe": 4,
+        "medium_total": 58,
+        "extreme_total": 41,
+        "medium_unsafe_recall": 0.8275862068965517,
+        "extreme_unsafe_recall": 0.9024390243902439
+      }
+    },
+    {
+      "threshold": 0.55,
+      "macro_f1": 0.6856447184375485,
+      "accuracy": 0.722972972972973,
+      "safe_precision": 0.5833333333333334,
+      "safe_recall": 0.5714285714285714,
+      "safe_f1": 0.5773195876288659,
+      "unsafe_precision": 0.79,
+      "unsafe_recall": 0.797979797979798,
+      "unsafe_f1": 0.7939698492462312,
+      "confusion_matrix": [
+        [
+          28,
+          21
+        ],
+        [
+          20,
+          79
+        ]
+      ],
+      "original_label_error_breakdown": {
+        "original0_to_unsafe": 21,
+        "original1_to_safe": 14,
+        "original2_to_safe": 6,
+        "medium_total": 58,
+        "extreme_total": 41,
+        "medium_unsafe_recall": 0.7586206896551724,
+        "extreme_unsafe_recall": 0.8536585365853658
+      }
+    },
+    {
+      "threshold": 0.6,
+      "macro_f1": 0.6853088068041339,
+      "accuracy": 0.7094594594594594,
+      "safe_precision": 0.5517241379310345,
+      "safe_recall": 0.6530612244897959,
+      "safe_f1": 0.5981308411214953,
+      "unsafe_precision": 0.8111111111111111,
+      "unsafe_recall": 0.7373737373737373,
+      "unsafe_f1": 0.7724867724867724,
+      "confusion_matrix": [
+        [
+          32,
+          17
+        ],
+        [
+          26,
+          73
+        ]
+      ],
+      "original_label_error_breakdown": {
+        "original0_to_unsafe": 17,
+        "original1_to_safe": 18,
+        "original2_to_safe": 8,
+        "medium_total": 58,
+        "extreme_total": 41,
+        "medium_unsafe_recall": 0.6896551724137931,
+        "extreme_unsafe_recall": 0.8048780487804879
+      }
+    }
+  ],
+  "checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/binary_temporal_medium_extreme_merged_best.pt",
+  "latest_checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/binary_temporal_medium_extreme_merged_latest.pt",
+  "backbone_checkpoint": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/convnext_sexynude_hardneg_best.pt",
+  "dataset2_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 2/censora_movies_tvshows_dataset",
+  "seq_len": 16,
+  "roi_enabled": false,
+  "encoder_frozen": true,
+  "low_memory_encoder_chunk_size": 4,
+  "batch_size": 1,
+  "grad_accum_steps": 2,
+  "effective_batch_size": 2,
+  "encoder_amp_enabled": true,
+  "gradient_clip_norm": 5.0,
+  "matched_preprocessing": true,
+  "transform_description": {
+    "backbone_reference": "fast_transform_rgb224",
+    "matched_preprocessing": true,
+    "normalization": "none",
+    "pixel_range": "[0, 1]",
+    "train": "RandomResizedCrop(224, scale=(0.8,1.0)) + RandomHorizontalFlip + ColorJitter(0.3,0.3,0.3) + ToTensor",
+    "val": "Resize((224,224)) + ToTensor"
+  },
+  "binary_mapping": {
+    "0": "Safe/Normal",
+    "1": "Unsafe/Medium+Extreme"
+  },
+  "class_weights": [
+    1.1273764371871948,
+    0.9883333444595337
+  ],
+  "temporal_dropout_enabled": true,
+  "temporal_dropout_prob": 0.5,
+  "temporal_dropout_fraction": "T//6",
+  "ordinal_baseline_macro_f1_reference": 0.5029,
+  "binary_macro_f1_not_directly_comparable_to_3class": true,
+  "medium_extreme_merge_reduced_ambiguity": true,
+  "extreme_false_safe_errors_remain_high": false,
+  "production_recommendation": "report as experiment / calibrate further before production",
+  "interpretation": "Binary merge is more stable than 3-class severity modeling but still limited.",
+  "first_batch_value_stats": {
+    "frames_shape": [
+      1,
+      16,
+      3,
+      224,
+      224
+    ],
+    "binary_labels_shape": [
+      1
+    ],
+    "original_labels_shape": [
+      1
+    ],
+    "min": 0.01568627543747425,
+    "max": 0.6235294342041016,
+    "mean": 0.2708292603492737,
+    "std": 0.1456516683101654,
+    "binary_labels": [
+      1
+    ],
+    "original_labels": [
+      1
+    ]
+  },
+  "train_original_counts": {
+    "0": 263,
+    "1": 119,
+    "2": 211
+  },
+  "val_original_counts": {
+    "0": 49,
+    "1": 58,
+    "2": 41
+  },
+  "train_binary_counts": {
+    "0": 263,
+    "1": 330
+  },
+  "val_binary_counts": {
+    "0": 49,
+    "1": 99
+  },
+  "training_seconds": 6088.382382993
+}

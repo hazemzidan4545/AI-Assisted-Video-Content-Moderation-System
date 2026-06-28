@@ -1,0 +1,61 @@
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+.venv_linux/
+venv/
+env/
+
+# Local editor/agent state
+.codex
+.vscode/
+.idea/
+
+# Large/raw datasets and external corpora
+Dataset/
+ActivityNet/
+Test video/
+Implimentation/05 Datasets used/
+
+# Generated app data
+Implimentation/uploads/
+Implimentation/outputs/
+Implimentation/suspicious_output/
+
+# Raw media outputs and local demo videos
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Duplicate/local exploratory notebooks and old package exports
+/PORNMODULE.ipynb
+/TEST*.ipynb
+Implimentation/PORNMODULE_before_submission_reorg.ipynb
+submission_final/
+Hazem 237347/
+
+# Model checkpoints: ignore all except final runnable models
+*.pt
+*.pth
+*.ckpt
+!Implimentation/yolov8n.pt
+!Implimentation/checkpoints/binary_temporal_roi_best.pt
+!Implimentation/checkpoints/convnext_sexynude_hardneg_best.pt
+
+# Keep lightweight final fusion artifacts if explicitly added
+!Implimentation/checkpoints/audio_fusion_binary_roi_model.joblib
+!Implimentation/checkpoints/audio_late_fusion_model.joblib
+
+# Office/autosave artifacts
+~$*
+*.odt
+
+# Generated archive; extracted evidence files are tracked instead
+reports/thesis_evidence_bundle.zip

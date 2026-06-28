@@ -1,0 +1,91 @@
+{
+  "model_name": "convnext_tiny",
+  "train_variant": "original_dataset1",
+  "epochs": 15,
+  "best_epoch": 15,
+  "primary_metric": "macro_f2",
+  "best_macro_f1": 0.8814884360579421,
+  "best_macro_f2": 0.8720103034978327,
+  "best_accuracy": 0.8859887444207258,
+  "confusion_matrix": [
+    [
+      3660,
+      19,
+      379
+    ],
+    [
+      32,
+      1714,
+      502
+    ],
+    [
+      220,
+      23,
+      3757
+    ]
+  ],
+  "classification_report": {
+    "normal": {
+      "precision": 0.9355828220858896,
+      "recall": 0.9019221291276491,
+      "f1-score": 0.918444165621079,
+      "support": 4058.0
+    },
+    "sexy": {
+      "precision": 0.9760820045558086,
+      "recall": 0.7624555160142349,
+      "f1-score": 0.8561438561438561,
+      "support": 2248.0
+    },
+    "nude": {
+      "precision": 0.810047434238896,
+      "recall": 0.93925,
+      "f1-score": 0.869877286408891,
+      "support": 4000.0
+    },
+    "accuracy": 0.8859887444207258,
+    "macro avg": {
+      "precision": 0.9072374202935314,
+      "recall": 0.8678758817139612,
+      "f1-score": 0.8814884360579421,
+      "support": 10306.0
+    },
+    "weighted avg": {
+      "precision": 0.8956934965283896,
+      "recall": 0.8859887444207258,
+      "f1-score": 0.8860049445310781,
+      "support": 10306.0
+    }
+  },
+  "checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/convnext_tiny_sexynude_best.pt",
+  "latest_checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/convnext_tiny_sexynude_latest.pt",
+  "results_csv": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/convnext_tiny_sexynude_results.csv",
+  "train_counts": {
+    "0": 196281,
+    "1": 38003,
+    "2": 430508
+  },
+  "validation_counts": {
+    "0": 4058,
+    "1": 2248,
+    "2": 4000
+  },
+  "test_counts": {
+    "0": 4050,
+    "1": 2121,
+    "2": 3878
+  },
+  "hard_negative_count": 813,
+  "stable_loader_retry_used": false,
+  "training_seconds": 37488.235298014995,
+  "config": {
+    "pretrained": true,
+    "batch_size": 56,
+    "num_workers": 20,
+    "amp": true,
+    "channels_last": true,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "transform": "fast_transform_rgb224 RGB 224 tensor [0,1], no ImageNet normalization"
+  }
+}

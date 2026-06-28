@@ -1,0 +1,258 @@
+{
+  "best_epoch": 7,
+  "best_endpoint_macro_f1": 0.8377010125074449,
+  "best_endpoint_accuracy": 0.819672131147541,
+  "best_t1": 0.4,
+  "best_t2": 1.4,
+  "best_mae": 0.373046338558197,
+  "classification_report_endpoint": {
+    "Normal": {
+      "precision": 0.7307692307692307,
+      "recall": 0.95,
+      "f1-score": 0.8260869565217391,
+      "support": 20.0
+    },
+    "Extreme": {
+      "precision": 0.96875,
+      "recall": 0.7560975609756098,
+      "f1-score": 0.8493150684931506,
+      "support": 41.0
+    },
+    "micro avg": {
+      "precision": 0.8620689655172413,
+      "recall": 0.819672131147541,
+      "f1-score": 0.8403361344537815,
+      "support": 61.0
+    },
+    "macro avg": {
+      "precision": 0.8497596153846154,
+      "recall": 0.8530487804878049,
+      "f1-score": 0.8377010125074449,
+      "support": 61.0
+    },
+    "weighted avg": {
+      "precision": 0.8907235182849936,
+      "recall": 0.819672131147541,
+      "f1-score": 0.8416992940762944,
+      "support": 61.0
+    }
+  },
+  "confusion_matrix_3class": [
+    [
+      19,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      3,
+      31
+    ]
+  ],
+  "checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/ordinal_temporal_dataset3_clips_lowmem_best.pt",
+  "latest_checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/ordinal_temporal_dataset3_clips_lowmem_latest.pt",
+  "backbone_checkpoint": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/convnext_sexynude_hardneg_best.pt",
+  "dataset3_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset",
+  "dataset3_reconstructed_clips": true,
+  "dataset2_used": false,
+  "train_clip_counts_by_class": {
+    "0": 73,
+    "2": 68
+  },
+  "val_clip_counts_by_class": {
+    "0": 20,
+    "2": 41
+  },
+  "static_train_image_counts_by_class": {
+    "0": 7619,
+    "2": 5030
+  },
+  "skipped_empty_clip_count": 2,
+  "skipped_empty_clip_paths": [
+    "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude train/47",
+    "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude train/70"
+  ],
+  "per_split_diagnostics": {
+    "safe_train": {
+      "clip_count": 73,
+      "static_count": 7619,
+      "skipped_empty_count": 0,
+      "skipped_empty_paths": [],
+      "frame_count_min": 4,
+      "frame_count_median": 30.0,
+      "frame_count_mean": 58.93150684931507,
+      "frame_count_max": 531,
+      "first_clip_paths": [
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/safe/safe train/1",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/safe/safe train/2",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/safe/safe train/3",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/safe/safe train/4",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/safe/safe train/5"
+      ]
+    },
+    "nude_train": {
+      "clip_count": 68,
+      "static_count": 5030,
+      "skipped_empty_count": 2,
+      "skipped_empty_paths": [
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude train/47",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude train/70"
+      ],
+      "frame_count_min": 7,
+      "frame_count_median": 62.5,
+      "frame_count_mean": 83.88235294117646,
+      "frame_count_max": 359,
+      "first_clip_paths": [
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude train/1",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude train/2",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude train/3",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude train/4",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude train/5"
+      ]
+    },
+    "safe_val": {
+      "clip_count": 20,
+      "static_count": 3035,
+      "skipped_empty_count": 0,
+      "skipped_empty_paths": [],
+      "frame_count_min": 11,
+      "frame_count_median": 29.5,
+      "frame_count_mean": 71.65,
+      "frame_count_max": 280,
+      "first_clip_paths": [
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/safe/safe test/1",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/safe/safe test/2",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/safe/safe test/3",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/safe/safe test/4",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/safe/safe test/5"
+      ]
+    },
+    "nude_val": {
+      "clip_count": 41,
+      "static_count": 2324,
+      "skipped_empty_count": 0,
+      "skipped_empty_paths": [],
+      "frame_count_min": 6,
+      "frame_count_median": 42.0,
+      "frame_count_mean": 55.853658536585364,
+      "frame_count_max": 202,
+      "first_clip_paths": [
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude test/1",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude test/2",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude test/3",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude test/4",
+        "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 3/image dataset/nude/nude test/5"
+      ]
+    }
+  },
+  "seq_len": 16,
+  "roi_enabled": false,
+  "encoder_frozen": true,
+  "matched_preprocessing": true,
+  "transform_description": {
+    "backbone_reference": "fast_transform_rgb224",
+    "matched_preprocessing": true,
+    "normalization": "none",
+    "pixel_range": "[0, 1]",
+    "train": "RandomResizedCrop(224, scale=(0.8,1.0)) + RandomHorizontalFlip + ColorJitter(0.3,0.3,0.3) + ToTensor",
+    "val": "Resize((224,224)) + ToTensor"
+  },
+  "loss": "weighted SmoothL1Loss(beta=0.5, reduction=none)",
+  "clip_sample_weight": 1.0,
+  "static_image_weight": 0.25,
+  "static_train_anchors_enabled": true,
+  "static_validation_enabled": false,
+  "temporal_dropout_enabled": true,
+  "temporal_dropout_prob": 0.5,
+  "temporal_dropout_fraction": "T//6",
+  "batch_size": 1,
+  "grad_accum_steps": 2,
+  "effective_batch_size": 2,
+  "amp_enabled": true,
+  "encoder_chunk_size": 4,
+  "grad_clip_max_norm": 5.0,
+  "normal_correct": 19,
+  "normal_total": 20,
+  "extreme_correct": 31,
+  "extreme_total": 41,
+  "medium_prediction_count": 3,
+  "score_distribution_summary": {
+    "min": -0.0194244384765625,
+    "max": 2.140625,
+    "mean": 1.0788551568984985,
+    "std": 0.9066380858421326
+  },
+  "threshold_results": [
+    {
+      "t1": 0.4,
+      "t2": 1.4,
+      "endpoint_macro_f1": 0.8377010125074449,
+      "endpoint_accuracy": 0.819672131147541
+    },
+    {
+      "t1": 0.5,
+      "t2": 1.5,
+      "endpoint_macro_f1": 0.8377010125074449,
+      "endpoint_accuracy": 0.819672131147541
+    },
+    {
+      "t1": 0.55,
+      "t2": 1.45,
+      "endpoint_macro_f1": 0.8377010125074449,
+      "endpoint_accuracy": 0.819672131147541
+    },
+    {
+      "t1": 0.6,
+      "t2": 1.6,
+      "endpoint_macro_f1": 0.8214941824862216,
+      "endpoint_accuracy": 0.7868852459016393
+    },
+    {
+      "t1": 0.65,
+      "t2": 1.55,
+      "endpoint_macro_f1": 0.8214941824862216,
+      "endpoint_accuracy": 0.7868852459016393
+    }
+  ],
+  "first_batch_value_stats": {
+    "frames_shape": [
+      1,
+      16,
+      3,
+      224,
+      224
+    ],
+    "target_scores_shape": [
+      1
+    ],
+    "labels_shape": [
+      1
+    ],
+    "sample_weights_shape": [
+      1
+    ],
+    "min": 0.14901961386203766,
+    "max": 0.886274516582489,
+    "mean": 0.550620436668396,
+    "std": 0.1868075728416443,
+    "targets": [
+      2.0
+    ],
+    "labels": [
+      2
+    ],
+    "sample_weights": [
+      0.25
+    ],
+    "kinds": [
+      "static_image"
+    ]
+  },
+  "decision_note": "Dataset 2 comparison is intentionally not applicable because this run uses Dataset 3 reconstructed clips only.",
+  "training_seconds": 9252.296218714002
+}

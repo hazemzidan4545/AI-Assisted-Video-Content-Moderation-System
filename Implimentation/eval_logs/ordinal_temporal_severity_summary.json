@@ -1,0 +1,143 @@
+{
+  "best_epoch": 4,
+  "best_macro_f1": 0.502864782276547,
+  "best_t1": 0.55,
+  "best_t2": 1.45,
+  "best_mae": 0.6115117073059082,
+  "classification_report": {
+    "Normal": {
+      "precision": 0.5357142857142857,
+      "recall": 0.6122448979591837,
+      "f1-score": 0.5714285714285714,
+      "support": 49.0
+    },
+    "Medium": {
+      "precision": 0.5,
+      "recall": 0.6724137931034483,
+      "f1-score": 0.5735294117647058,
+      "support": 58.0
+    },
+    "Extreme": {
+      "precision": 0.7142857142857143,
+      "recall": 0.24390243902439024,
+      "f1-score": 0.36363636363636365,
+      "support": 41.0
+    },
+    "accuracy": 0.5337837837837838,
+    "macro avg": {
+      "precision": 0.5833333333333334,
+      "recall": 0.5095203766956741,
+      "f1-score": 0.502864782276547,
+      "support": 148.0
+    },
+    "weighted avg": {
+      "precision": 0.5711872586872586,
+      "recall": 0.5337837837837838,
+      "f1-score": 0.5146878161584044,
+      "support": 148.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      30,
+      18,
+      1
+    ],
+    [
+      16,
+      39,
+      3
+    ],
+    [
+      10,
+      21,
+      10
+    ]
+  ],
+  "checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/ordinal_temporal_severity_best.pt",
+  "latest_checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/ordinal_temporal_severity_latest.pt",
+  "backbone_checkpoint": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/convnext_sexynude_hardneg_best.pt",
+  "seq_len": 16,
+  "roi_enabled": false,
+  "encoder_frozen": true,
+  "matched_preprocessing": true,
+  "transform_description": {
+    "backbone_reference": "fast_transform_rgb224",
+    "matched_preprocessing": true,
+    "normalization": "none",
+    "pixel_range": "[0, 1]",
+    "train": "RandomResizedCrop(224, scale=(0.8,1.0)) + RandomHorizontalFlip + ColorJitter(0.3,0.3,0.3) + ToTensor",
+    "val": "Resize((224,224)) + ToTensor"
+  },
+  "loss": "SmoothL1Loss(beta=0.5)",
+  "optimizer": "AdamW(lr=3e-4, weight_decay=1e-4)",
+  "scheduler": "CosineAnnealingLR",
+  "temporal_dropout_enabled": true,
+  "temporal_dropout_prob": 0.5,
+  "temporal_dropout_fraction": "T//6",
+  "score_distribution_summary": {
+    "min": -0.046077534556388855,
+    "max": 1.7139759063720703,
+    "mean": 0.7932054400444031,
+    "std": 0.5350376963615417
+  },
+  "mean_score_per_true_class": {
+    "0": 0.4919882118701935,
+    "1": 0.9188829660415649,
+    "2": 0.9754088521003723
+  },
+  "threshold_results": [
+    {
+      "t1": 0.4,
+      "t2": 1.4,
+      "macro_f1": 0.4999322309568989
+    },
+    {
+      "t1": 0.5,
+      "t2": 1.5,
+      "macro_f1": 0.46398692810457515
+    },
+    {
+      "t1": 0.6,
+      "t2": 1.6,
+      "macro_f1": 0.43817052880101875
+    },
+    {
+      "t1": 0.45,
+      "t2": 1.35,
+      "macro_f1": 0.4716402116402116
+    },
+    {
+      "t1": 0.55,
+      "t2": 1.45,
+      "macro_f1": 0.502864782276547
+    }
+  ],
+  "first_batch_value_stats": {
+    "shape": [
+      2,
+      16,
+      3,
+      224,
+      224
+    ],
+    "labels_shape": [
+      2
+    ],
+    "min": 0.01568627543747425,
+    "max": 0.6235294342041016,
+    "mean": 0.2564999461174011,
+    "std": 0.13926680386066437
+  },
+  "train_class_counts": {
+    "0": 263,
+    "1": 119,
+    "2": 211
+  },
+  "val_class_counts": {
+    "0": 49,
+    "1": 58,
+    "2": 41
+  },
+  "training_seconds": 4577.235431736
+}

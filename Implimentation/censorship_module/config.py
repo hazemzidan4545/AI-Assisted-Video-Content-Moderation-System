@@ -1,0 +1,75 @@
+"""Configuration defaults for the standalone censorship module."""
+
+BINARY_TEMPORAL_CKPT = "checkpoints/binary_temporal_roi_best.pt"
+IMAGE_BACKBONE_CKPT = "checkpoints/convnext_sexynude_hardneg_best.pt"
+
+SEQ_LEN = 16
+
+WINDOW_SECONDS = 4.0
+WINDOW_STRIDE_SECONDS = 2.0
+PRE_PAD_SECONDS = 0.0
+POST_PAD_SECONDS = 0.0
+MERGE_GAP_SECONDS = 0.5
+SMOOTHING_WINDOW = 3
+ENABLE_SCENE_CUT_BOUNDARY = False
+SCENE_CUT_THRESHOLD = 35.0
+FULL_FRAME_END_TRIM_SECONDS = 0.35
+
+TEMPORAL_UNSAFE_THRESHOLD = 0.50
+
+FRAME_RISK_THRESHOLD = 0.90
+FRAME_TOPK = 3
+
+FUSED_UNSAFE_POLICY = "temporal_only"
+# options: "temporal_only", "frame_only", "or", "weighted"
+TEMPORAL_WEIGHT = 0.7
+FRAME_WEIGHT = 0.3
+FUSED_THRESHOLD = 0.55
+
+PATCH_SIZES = [160, 224, 320]
+PATCH_STRIDE = 96
+PATCH_BATCH_SIZE = 32
+
+PATCH_RISK_THRESHOLD = 0.85
+TOP_PERCENTILE = 95
+
+BOX_PADDING_RATIO = 0.15
+MIN_BOX_AREA_RATIO = 0.005
+MAX_CENSOR_AREA_RATIO = 0.45
+
+CENSOR_REGION_MODE = "full_frame"
+# options: "full_frame", "person_body", "patch_debug"
+LOCALIZATION_SCOPE = CENSOR_REGION_MODE
+# options: "person_body", "person_roi_patch_debug", "full_frame_debug"
+REQUIRE_PERSON_ROI_FOR_PATCHES = True
+PERSON_ROI_BODY_FALLBACK = True
+BODY_FALLBACK_VERTICAL_RANGE = [0.25, 0.90]
+BODY_FALLBACK_HORIZONTAL_RANGE = [0.15, 0.85]
+MIN_PERSON_ROI_AREA_RATIO = 0.03
+MAX_PERSON_ROI_AREA_RATIO = 0.80
+
+LOCALIZE_EVERY_N_FRAMES = 4
+
+CENSOR_MODE = "pixelate"
+# options: "pixelate", "blur"
+PIXELATION_FACTOR = 36
+BLUR_KERNEL = 121
+BLUR_PASSES = 2
+
+FALLBACK_MODE = "center_region"
+# options: "center_region", "whole_frame_last_resort", "none"
+
+ROI_MODE = "auto"
+# options: "auto", "yolo", "none"
+ROI_CONF = 0.25
+ROI_INFERENCE_SIZE = 320
+
+COMPUTE_FRAME_RISK_IN_FULL_FRAME_MODE = False
+USE_PATCH_LOCALIZATION_IN_FULL_FRAME_MODE = False
+USE_PERSON_ROI_IN_FULL_FRAME_MODE = False
+
+PRESERVE_AUDIO = True
+MUTE_UNSAFE_AUDIO = False
+AUDIO_CODEC = "aac"
+
+OUTPUT_DIR = "outputs/censored"

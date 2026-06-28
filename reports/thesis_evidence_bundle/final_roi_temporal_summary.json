@@ -1,0 +1,120 @@
+{
+  "model_name": {
+    "value": "ConvNeXtTemporalClassifier binary ROI temporal classifier",
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "checkpoint_path": {
+    "value": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/binary_temporal_roi_best.pt",
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "dataset_used": {
+    "value": "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 2/censora_movies_tvshows_dataset",
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "split_method": {
+    "value": "GroupKFold(n_splits=5) by video_id",
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "clip_length": {
+    "value": 16,
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "frame_sampling_method": {
+    "value": "16-frame temporal sampling with ROI enabled; exact per-frame sampler parameters not fully logged",
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "ROI_method_used": {
+    "value": {
+      "roi_enabled": true,
+      "roi_conf": 0.25,
+      "roi_inference_size": 320
+    },
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "selected_threshold": {
+    "value": 0.5,
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "accuracy": {
+    "value": 0.7837837837837838,
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "precision": {
+    "value": 0.7570658036677453,
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "recall": {
+    "value": 0.7456194599051742,
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "F1": {
+    "value": 0.7505793132504739,
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "macro_F1": {
+    "value": 0.7505793132504739,
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "macro_F2": {
+    "value": "NOT_FOUND",
+    "source": "NOT_FOUND"
+  },
+  "unsafe_recall": {
+    "value": 0.8585858585858586,
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "confusion_matrix": {
+    "value": [
+      [
+        31,
+        18
+      ],
+      [
+        14,
+        85
+      ]
+    ],
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "baseline_full_frame_metrics": {
+    "value": {
+      "macro_f1": 0.6856,
+      "unsafe_recall": 0.798,
+      "safe_recall": 0.5714,
+      "source_baseline_summary": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_medium_extreme_merged_summary.json",
+      "baseline_summary_threshold": 0.55,
+      "baseline_confusion_matrix": [
+        [
+          28,
+          21
+        ],
+        [
+          20,
+          79
+        ]
+      ]
+    },
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "ROI_aware_metrics": {
+    "value": {
+      "macro_f1": 0.7505793132504739,
+      "unsafe_recall": 0.8585858585858586,
+      "safe_recall": 0.6326530612244898,
+      "unsafe_precision": 0.8252427184466019,
+      "safe_precision": 0.6888888888888889
+    },
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "improvement_from_full_frame_to_ROI_aware": {
+    "value": {
+      "macro_f1_delta": 0.0649793132504739,
+      "unsafe_recall_delta": 0.06058585858585852,
+      "safe_recall_delta": 0.06125306122448981,
+      "decision": "ACCEPT_ROI",
+      "decision_reason": "macro F1 improved by +0.0650; unsafe recall improved by +0.0606 with safe recall 0.6327"
+    },
+    "source": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+  },
+  "source_notebook_or_log": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/eval_logs/binary_temporal_roi_summary.json"
+}

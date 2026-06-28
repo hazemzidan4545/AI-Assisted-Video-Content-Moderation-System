@@ -1,0 +1,1889 @@
+{
+  "dataset_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Dataset/Dataset 2/censora_movies_tvshows_dataset",
+  "backbone_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/convnext_sexynude_best.pt",
+  "checkpoint_path": "/media/hazem/6A47B344CD80864E/GP Implementation/Implimentation/checkpoints/temporal_multitask_best.pt",
+  "best_epoch": 27,
+  "best_macro_f1": 0.3423375973093492,
+  "sequence_length": 16,
+  "batch_size": 2,
+  "safe_threshold": 0.5,
+  "severity_loss_weight": 0.7,
+  "label_smoothing": 0.1,
+  "train_counts_original": {
+    "0": 263,
+    "1": 119,
+    "2": 211
+  },
+  "val_counts_original": {
+    "0": 49,
+    "1": 58,
+    "2": 41
+  },
+  "safe_counts": [
+    263,
+    330
+  ],
+  "severity_counts": [
+    119,
+    211
+  ],
+  "safe_weights": [
+    1.1273764371871948,
+    1.1680302619934082
+  ],
+  "severity_weights": [
+    1.3865545988082886,
+    0.7819905281066895
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_total_loss": 1.0992619858847723,
+      "train_safe_loss": 0.6974307025723184,
+      "train_severity_loss": 0.5740447008248531,
+      "val_macro_f1": 0.21192528735632185,
+      "val_per_class_f1": {
+        "Safe": 0.1875,
+        "Medium": 0.0,
+        "Extreme": 0.4482758620689655
+      },
+      "val_confusion_matrix": [
+        [
+          6,
+          0,
+          43
+        ],
+        [
+          7,
+          0,
+          51
+        ],
+        [
+          2,
+          0,
+          39
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          6,
+          43
+        ],
+        [
+          9,
+          90
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 2,
+      "train_total_loss": 1.0952924945539095,
+      "train_safe_loss": 0.68693542530641,
+      "train_severity_loss": 0.5833672526910249,
+      "val_macro_f1": 0.22147900408769974,
+      "val_per_class_f1": {
+        "Safe": 0.2028985507246377,
+        "Medium": 0.0,
+        "Extreme": 0.46153846153846156
+      },
+      "val_confusion_matrix": [
+        [
+          7,
+          0,
+          42
+        ],
+        [
+          11,
+          0,
+          47
+        ],
+        [
+          2,
+          0,
+          39
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          7,
+          42
+        ],
+        [
+          13,
+          86
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 3,
+      "train_total_loss": 1.0745698097177627,
+      "train_safe_loss": 0.6798608285008054,
+      "train_severity_loss": 0.5638699815530167,
+      "val_macro_f1": 0.30951014159969387,
+      "val_per_class_f1": {
+        "Safe": 0.44776119402985076,
+        "Medium": 0.0,
+        "Extreme": 0.4807692307692308
+      },
+      "val_confusion_matrix": [
+        [
+          30,
+          0,
+          19
+        ],
+        [
+          39,
+          0,
+          19
+        ],
+        [
+          16,
+          0,
+          25
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          30,
+          19
+        ],
+        [
+          55,
+          44
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 4,
+      "train_total_loss": 1.085562008298206,
+      "train_safe_loss": 0.6753327268542666,
+      "train_severity_loss": 0.586041841743771,
+      "val_macro_f1": 0.29653175107720564,
+      "val_per_class_f1": {
+        "Safe": 0.41025641025641024,
+        "Medium": 0.0,
+        "Extreme": 0.4793388429752066
+      },
+      "val_confusion_matrix": [
+        [
+          24,
+          0,
+          25
+        ],
+        [
+          32,
+          0,
+          26
+        ],
+        [
+          12,
+          0,
+          29
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          24,
+          25
+        ],
+        [
+          44,
+          55
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 5,
+      "train_total_loss": 1.0510304957527905,
+      "train_safe_loss": 0.6588411313114744,
+      "train_severity_loss": 0.560270530808253,
+      "val_macro_f1": 0.3045350172215844,
+      "val_per_class_f1": {
+        "Safe": 0.43283582089552236,
+        "Medium": 0.0,
+        "Extreme": 0.4807692307692308
+      },
+      "val_confusion_matrix": [
+        [
+          29,
+          0,
+          20
+        ],
+        [
+          40,
+          0,
+          18
+        ],
+        [
+          16,
+          0,
+          25
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          29,
+          20
+        ],
+        [
+          56,
+          43
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 6,
+      "train_total_loss": 1.0355269295800014,
+      "train_safe_loss": 0.6599452519657636,
+      "train_severity_loss": 0.5365452576767314,
+      "val_macro_f1": 0.3037242491050897,
+      "val_per_class_f1": {
+        "Safe": 0.43410852713178294,
+        "Medium": 0.0,
+        "Extreme": 0.47706422018348627
+      },
+      "val_confusion_matrix": [
+        [
+          28,
+          0,
+          21
+        ],
+        [
+          37,
+          0,
+          21
+        ],
+        [
+          15,
+          0,
+          26
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          28,
+          21
+        ],
+        [
+          52,
+          47
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 7,
+      "train_total_loss": 1.0403416235037524,
+      "train_safe_loss": 0.6550873661984499,
+      "train_severity_loss": 0.5503632358027628,
+      "val_macro_f1": 0.24444444444444444,
+      "val_per_class_f1": {
+        "Safe": 0.47619047619047616,
+        "Medium": 0.0,
+        "Extreme": 0.2571428571428571
+      },
+      "val_confusion_matrix": [
+        [
+          40,
+          0,
+          9
+        ],
+        [
+          47,
+          0,
+          11
+        ],
+        [
+          32,
+          0,
+          9
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          40,
+          9
+        ],
+        [
+          79,
+          20
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 8,
+      "train_total_loss": 1.033357140592453,
+      "train_safe_loss": 0.6505533765863489,
+      "train_severity_loss": 0.5468625271761859,
+      "val_macro_f1": 0.29114877589453864,
+      "val_per_class_f1": {
+        "Safe": 0.4067796610169492,
+        "Medium": 0.0,
+        "Extreme": 0.4666666666666667
+      },
+      "val_confusion_matrix": [
+        [
+          24,
+          0,
+          25
+        ],
+        [
+          32,
+          0,
+          26
+        ],
+        [
+          13,
+          0,
+          28
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          24,
+          25
+        ],
+        [
+          45,
+          54
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 9,
+      "train_total_loss": 1.0606797560296877,
+      "train_safe_loss": 0.6681777426490078,
+      "train_severity_loss": 0.5607171753038862,
+      "val_macro_f1": 0.27919260516883604,
+      "val_per_class_f1": {
+        "Safe": 0.38596491228070173,
+        "Medium": 0.0,
+        "Extreme": 0.45161290322580644
+      },
+      "val_confusion_matrix": [
+        [
+          22,
+          0,
+          27
+        ],
+        [
+          30,
+          0,
+          28
+        ],
+        [
+          13,
+          0,
+          28
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          22,
+          27
+        ],
+        [
+          43,
+          56
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 10,
+      "train_total_loss": 1.0679091765021635,
+      "train_safe_loss": 0.6752611573296364,
+      "train_severity_loss": 0.5609257532289935,
+      "val_macro_f1": 0.23594377510040157,
+      "val_per_class_f1": {
+        "Safe": 0.4578313253012048,
+        "Medium": 0.0,
+        "Extreme": 0.25
+      },
+      "val_confusion_matrix": [
+        [
+          38,
+          0,
+          11
+        ],
+        [
+          47,
+          0,
+          11
+        ],
+        [
+          32,
+          0,
+          9
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          38,
+          11
+        ],
+        [
+          79,
+          20
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 11,
+      "train_total_loss": 1.0394606066472603,
+      "train_safe_loss": 0.6523530396949563,
+      "train_severity_loss": 0.5530108167266203,
+      "val_macro_f1": 0.2926253687315634,
+      "val_per_class_f1": {
+        "Safe": 0.4,
+        "Medium": 0.0,
+        "Extreme": 0.4778761061946903
+      },
+      "val_confusion_matrix": [
+        [
+          25,
+          0,
+          24
+        ],
+        [
+          37,
+          0,
+          21
+        ],
+        [
+          14,
+          0,
+          27
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          25,
+          24
+        ],
+        [
+          51,
+          48
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 12,
+      "train_total_loss": 1.0337274068533773,
+      "train_safe_loss": 0.6437435031739951,
+      "train_severity_loss": 0.5571198679180659,
+      "val_macro_f1": 0.28571428571428575,
+      "val_per_class_f1": {
+        "Safe": 0.40336134453781514,
+        "Medium": 0.0,
+        "Extreme": 0.453781512605042
+      },
+      "val_confusion_matrix": [
+        [
+          24,
+          0,
+          25
+        ],
+        [
+          32,
+          0,
+          26
+        ],
+        [
+          14,
+          0,
+          27
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          24,
+          25
+        ],
+        [
+          46,
+          53
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 13,
+      "train_total_loss": 1.0101490835549454,
+      "train_safe_loss": 0.6366945005928226,
+      "train_severity_loss": 0.5335065523783366,
+      "val_macro_f1": 0.2996213004716737,
+      "val_per_class_f1": {
+        "Safe": 0.40625,
+        "Medium": 0.03389830508474576,
+        "Extreme": 0.45871559633027525
+      },
+      "val_confusion_matrix": [
+        [
+          26,
+          0,
+          23
+        ],
+        [
+          37,
+          1,
+          20
+        ],
+        [
+          16,
+          0,
+          25
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          26,
+          23
+        ],
+        [
+          53,
+          46
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          1,
+          57
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 14,
+      "train_total_loss": 1.028928090125222,
+      "train_safe_loss": 0.6401015099652287,
+      "train_severity_loss": 0.5554665544819751,
+      "val_macro_f1": 0.24205207928488148,
+      "val_per_class_f1": {
+        "Safe": 0.4129032258064516,
+        "Medium": 0.0,
+        "Extreme": 0.3132530120481928
+      },
+      "val_confusion_matrix": [
+        [
+          32,
+          0,
+          17
+        ],
+        [
+          46,
+          0,
+          12
+        ],
+        [
+          28,
+          0,
+          13
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          32,
+          17
+        ],
+        [
+          74,
+          25
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          0,
+          58
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 15,
+      "train_total_loss": 1.0394692404904349,
+      "train_safe_loss": 0.653087615615591,
+      "train_severity_loss": 0.5519737561142405,
+      "val_macro_f1": 0.2468201754385965,
+      "val_per_class_f1": {
+        "Safe": 0.4342105263157895,
+        "Medium": 0.03125,
+        "Extreme": 0.275
+      },
+      "val_confusion_matrix": [
+        [
+          33,
+          3,
+          13
+        ],
+        [
+          42,
+          1,
+          15
+        ],
+        [
+          28,
+          2,
+          11
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          33,
+          16
+        ],
+        [
+          70,
+          29
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          6,
+          52
+        ],
+        [
+          5,
+          36
+        ]
+      ]
+    },
+    {
+      "epoch": 16,
+      "train_total_loss": 0.9822873546920642,
+      "train_safe_loss": 0.616451436321342,
+      "train_severity_loss": 0.5226227465502742,
+      "val_macro_f1": 0.28295604263983715,
+      "val_per_class_f1": {
+        "Safe": 0.39669421487603307,
+        "Medium": 0.0,
+        "Extreme": 0.45217391304347826
+      },
+      "val_confusion_matrix": [
+        [
+          24,
+          1,
+          24
+        ],
+        [
+          34,
+          0,
+          24
+        ],
+        [
+          14,
+          1,
+          26
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          24,
+          25
+        ],
+        [
+          48,
+          51
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          4,
+          54
+        ],
+        [
+          1,
+          40
+        ]
+      ]
+    },
+    {
+      "epoch": 17,
+      "train_total_loss": 0.9964440498588863,
+      "train_safe_loss": 0.6177420529853616,
+      "train_severity_loss": 0.5410028636856914,
+      "val_macro_f1": 0.32043650793650796,
+      "val_per_class_f1": {
+        "Safe": 0.4166666666666667,
+        "Medium": 0.0625,
+        "Extreme": 0.48214285714285715
+      },
+      "val_confusion_matrix": [
+        [
+          25,
+          2,
+          22
+        ],
+        [
+          34,
+          2,
+          22
+        ],
+        [
+          12,
+          2,
+          27
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          25,
+          24
+        ],
+        [
+          46,
+          53
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          7,
+          51
+        ],
+        [
+          3,
+          38
+        ]
+      ]
+    },
+    {
+      "epoch": 18,
+      "train_total_loss": 1.0002440662697107,
+      "train_safe_loss": 0.6342019808513147,
+      "train_severity_loss": 0.5229172740721141,
+      "val_macro_f1": 0.3272863849765258,
+      "val_per_class_f1": {
+        "Safe": 0.432,
+        "Medium": 0.24,
+        "Extreme": 0.30985915492957744
+      },
+      "val_confusion_matrix": [
+        [
+          27,
+          14,
+          8
+        ],
+        [
+          35,
+          12,
+          11
+        ],
+        [
+          14,
+          16,
+          11
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          27,
+          22
+        ],
+        [
+          49,
+          50
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          29,
+          29
+        ],
+        [
+          23,
+          18
+        ]
+      ]
+    },
+    {
+      "epoch": 19,
+      "train_total_loss": 0.9921965436501936,
+      "train_safe_loss": 0.6192776426823452,
+      "train_severity_loss": 0.5327412968733495,
+      "val_macro_f1": 0.31510741510741513,
+      "val_per_class_f1": {
+        "Safe": 0.43333333333333335,
+        "Medium": 0.06153846153846154,
+        "Extreme": 0.45045045045045046
+      },
+      "val_confusion_matrix": [
+        [
+          26,
+          2,
+          21
+        ],
+        [
+          32,
+          2,
+          24
+        ],
+        [
+          13,
+          3,
+          25
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          26,
+          23
+        ],
+        [
+          45,
+          54
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          7,
+          51
+        ],
+        [
+          4,
+          37
+        ]
+      ]
+    },
+    {
+      "epoch": 20,
+      "train_total_loss": 0.9627104242542376,
+      "train_safe_loss": 0.5957358305903797,
+      "train_severity_loss": 0.5242494268449469,
+      "val_macro_f1": 0.2795492009978642,
+      "val_per_class_f1": {
+        "Safe": 0.4473684210526316,
+        "Medium": 0.1095890410958904,
+        "Extreme": 0.28169014084507044
+      },
+      "val_confusion_matrix": [
+        [
+          34,
+          6,
+          9
+        ],
+        [
+          43,
+          4,
+          11
+        ],
+        [
+          26,
+          5,
+          10
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          34,
+          15
+        ],
+        [
+          69,
+          30
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          15,
+          43
+        ],
+        [
+          11,
+          30
+        ]
+      ]
+    },
+    {
+      "epoch": 21,
+      "train_total_loss": 0.9809162091426175,
+      "train_safe_loss": 0.6250496190605741,
+      "train_severity_loss": 0.5083808497547702,
+      "val_macro_f1": 0.2806665197325138,
+      "val_per_class_f1": {
+        "Safe": 0.43537414965986393,
+        "Medium": 0.08955223880597014,
+        "Extreme": 0.3170731707317073
+      },
+      "val_confusion_matrix": [
+        [
+          32,
+          3,
+          14
+        ],
+        [
+          41,
+          3,
+          14
+        ],
+        [
+          25,
+          3,
+          13
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          32,
+          17
+        ],
+        [
+          66,
+          33
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          10,
+          48
+        ],
+        [
+          6,
+          35
+        ]
+      ]
+    },
+    {
+      "epoch": 22,
+      "train_total_loss": 0.9876409203616858,
+      "train_safe_loss": 0.6112448036269307,
+      "train_severity_loss": 0.5377087470658299,
+      "val_macro_f1": 0.3337200528202226,
+      "val_per_class_f1": {
+        "Safe": 0.42105263157894735,
+        "Medium": 0.0967741935483871,
+        "Extreme": 0.48333333333333334
+      },
+      "val_confusion_matrix": [
+        [
+          24,
+          1,
+          24
+        ],
+        [
+          29,
+          3,
+          26
+        ],
+        [
+          12,
+          0,
+          29
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          24,
+          25
+        ],
+        [
+          41,
+          58
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          10,
+          48
+        ],
+        [
+          2,
+          39
+        ]
+      ]
+    },
+    {
+      "epoch": 23,
+      "train_total_loss": 0.9682714451944788,
+      "train_safe_loss": 0.600938519544473,
+      "train_severity_loss": 0.5247613310011148,
+      "val_macro_f1": 0.299514000356697,
+      "val_per_class_f1": {
+        "Safe": 0.4305555555555556,
+        "Medium": 0.06349206349206349,
+        "Extreme": 0.4044943820224719
+      },
+      "val_confusion_matrix": [
+        [
+          31,
+          2,
+          16
+        ],
+        [
+          42,
+          2,
+          14
+        ],
+        [
+          22,
+          1,
+          18
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          31,
+          18
+        ],
+        [
+          64,
+          35
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          9,
+          49
+        ],
+        [
+          1,
+          40
+        ]
+      ]
+    },
+    {
+      "epoch": 24,
+      "train_total_loss": 0.9741761266984522,
+      "train_safe_loss": 0.6114798213295664,
+      "train_severity_loss": 0.518137587742372,
+      "val_macro_f1": 0.3113123435704081,
+      "val_per_class_f1": {
+        "Safe": 0.4195804195804196,
+        "Medium": 0.0967741935483871,
+        "Extreme": 0.4175824175824176
+      },
+      "val_confusion_matrix": [
+        [
+          30,
+          1,
+          18
+        ],
+        [
+          42,
+          3,
+          13
+        ],
+        [
+          22,
+          0,
+          19
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          30,
+          19
+        ],
+        [
+          64,
+          35
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          9,
+          49
+        ],
+        [
+          0,
+          41
+        ]
+      ]
+    },
+    {
+      "epoch": 25,
+      "train_total_loss": 0.9867604651836434,
+      "train_safe_loss": 0.6235018218005145,
+      "train_severity_loss": 0.5189409253974555,
+      "val_macro_f1": 0.3356910656235487,
+      "val_per_class_f1": {
+        "Safe": 0.43410852713178294,
+        "Medium": 0.0967741935483871,
+        "Extreme": 0.47619047619047616
+      },
+      "val_confusion_matrix": [
+        [
+          28,
+          1,
+          20
+        ],
+        [
+          36,
+          3,
+          19
+        ],
+        [
+          16,
+          0,
+          25
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          28,
+          21
+        ],
+        [
+          52,
+          47
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          10,
+          48
+        ],
+        [
+          1,
+          40
+        ]
+      ]
+    },
+    {
+      "epoch": 26,
+      "train_total_loss": 1.004503349663834,
+      "train_safe_loss": 0.6356600879719763,
+      "train_severity_loss": 0.5269189582328604,
+      "val_macro_f1": 0.30864463601532566,
+      "val_per_class_f1": {
+        "Safe": 0.4413793103448276,
+        "Medium": 0.09375,
+        "Extreme": 0.39080459770114945
+      },
+      "val_confusion_matrix": [
+        [
+          32,
+          2,
+          15
+        ],
+        [
+          41,
+          3,
+          14
+        ],
+        [
+          23,
+          1,
+          17
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          32,
+          17
+        ],
+        [
+          64,
+          35
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          10,
+          48
+        ],
+        [
+          2,
+          39
+        ]
+      ]
+    },
+    {
+      "epoch": 27,
+      "train_total_loss": 0.9889621859046345,
+      "train_safe_loss": 0.6150824651372955,
+      "train_severity_loss": 0.5341138927021412,
+      "val_macro_f1": 0.3423375973093492,
+      "val_per_class_f1": {
+        "Safe": 0.4580152671755725,
+        "Medium": 0.09375,
+        "Extreme": 0.4752475247524752
+      },
+      "val_confusion_matrix": [
+        [
+          30,
+          2,
+          17
+        ],
+        [
+          36,
+          3,
+          19
+        ],
+        [
+          16,
+          1,
+          24
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          30,
+          19
+        ],
+        [
+          52,
+          47
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          10,
+          48
+        ],
+        [
+          2,
+          39
+        ]
+      ]
+    },
+    {
+      "epoch": 28,
+      "train_total_loss": 0.9484001533551649,
+      "train_safe_loss": 0.5856251769294643,
+      "train_severity_loss": 0.5182499729021631,
+      "val_macro_f1": 0.3247336860670194,
+      "val_per_class_f1": {
+        "Safe": 0.416,
+        "Medium": 0.09523809523809523,
+        "Extreme": 0.46296296296296297
+      },
+      "val_confusion_matrix": [
+        [
+          26,
+          1,
+          22
+        ],
+        [
+          35,
+          3,
+          20
+        ],
+        [
+          15,
+          1,
+          25
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          26,
+          23
+        ],
+        [
+          50,
+          49
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          10,
+          48
+        ],
+        [
+          2,
+          39
+        ]
+      ]
+    },
+    {
+      "epoch": 29,
+      "train_total_loss": 0.9588545856351403,
+      "train_safe_loss": 0.6056055335284082,
+      "train_severity_loss": 0.5046415083135418,
+      "val_macro_f1": 0.31380675029868577,
+      "val_per_class_f1": {
+        "Safe": 0.4032258064516129,
+        "Medium": 0.09375,
+        "Extreme": 0.4444444444444444
+      },
+      "val_confusion_matrix": [
+        [
+          25,
+          1,
+          23
+        ],
+        [
+          35,
+          3,
+          20
+        ],
+        [
+          15,
+          2,
+          24
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          25,
+          24
+        ],
+        [
+          50,
+          49
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          11,
+          47
+        ],
+        [
+          3,
+          38
+        ]
+      ]
+    },
+    {
+      "epoch": 30,
+      "train_total_loss": 1.0003843987830963,
+      "train_safe_loss": 0.6283565555959438,
+      "train_severity_loss": 0.5314683549933963,
+      "val_macro_f1": 0.32135064935064933,
+      "val_per_class_f1": {
+        "Safe": 0.416,
+        "Medium": 0.09090909090909091,
+        "Extreme": 0.45714285714285713
+      },
+      "val_confusion_matrix": [
+        [
+          26,
+          3,
+          20
+        ],
+        [
+          35,
+          3,
+          20
+        ],
+        [
+          15,
+          2,
+          24
+        ]
+      ],
+      "val_safe_confusion_matrix": [
+        [
+          26,
+          23
+        ],
+        [
+          50,
+          49
+        ]
+      ],
+      "val_severity_confusion_matrix": [
+        [
+          11,
+          47
+        ],
+        [
+          3,
+          38
+        ]
+      ]
+    }
+  ],
+  "final_val_metrics": {
+    "y_true": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "y_pred": [
+      0,
+      2,
+      1,
+      2,
+      2,
+      2,
+      2,
+      0,
+      2,
+      2,
+      2,
+      0,
+      2,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      0,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      2,
+      2,
+      2,
+      0,
+      2,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      2,
+      2,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      1,
+      2,
+      0,
+      1,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      0,
+      2,
+      2,
+      0,
+      2,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      2,
+      2,
+      0,
+      1,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2
+    ],
+    "classification_report": {
+      "Safe": {
+        "precision": 0.36585365853658536,
+        "recall": 0.6122448979591837,
+        "f1-score": 0.4580152671755725,
+        "support": 49.0
+      },
+      "Medium": {
+        "precision": 0.5,
+        "recall": 0.05172413793103448,
+        "f1-score": 0.09375,
+        "support": 58.0
+      },
+      "Extreme": {
+        "precision": 0.4,
+        "recall": 0.5853658536585366,
+        "f1-score": 0.4752475247524752,
+        "support": 41.0
+      },
+      "accuracy": 0.38513513513513514,
+      "macro avg": {
+        "precision": 0.4219512195121951,
+        "recall": 0.4164449631829183,
+        "f1-score": 0.3423375973093492,
+        "support": 148.0
+      },
+      "weighted avg": {
+        "precision": 0.4278839815425181,
+        "recall": 0.38513513513513514,
+        "f1-score": 0.3200364635571253,
+        "support": 148.0
+      }
+    },
+    "classification_report_text": "              precision    recall  f1-score   support\n\n        Safe     0.3659    0.6122    0.4580        49\n      Medium     0.5000    0.0517    0.0938        58\n     Extreme     0.4000    0.5854    0.4752        41\n\n    accuracy                         0.3851       148\n   macro avg     0.4220    0.4164    0.3423       148\nweighted avg     0.4279    0.3851    0.3200       148\n",
+    "confusion_matrix": [
+      [
+        30,
+        2,
+        17
+      ],
+      [
+        36,
+        3,
+        19
+      ],
+      [
+        16,
+        1,
+        24
+      ]
+    ],
+    "safe_confusion_matrix": [
+      [
+        30,
+        19
+      ],
+      [
+        52,
+        47
+      ]
+    ],
+    "severity_confusion_matrix": [
+      [
+        10,
+        48
+      ],
+      [
+        2,
+        39
+      ]
+    ],
+    "macro_f1": 0.3423375973093492,
+    "per_class_f1": {
+      "Safe": 0.4580152671755725,
+      "Medium": 0.09375,
+      "Extreme": 0.4752475247524752
+    }
+  }
+}

@@ -1,0 +1,12 @@
+streamlit
+torch
+torchvision
+timm
+opencv-python
+ultralytics
+numpy
+pillow
+tqdm
+pandas
+scikit-learn
+joblib

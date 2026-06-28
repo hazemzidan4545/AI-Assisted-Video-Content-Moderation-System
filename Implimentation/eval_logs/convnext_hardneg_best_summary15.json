@@ -1,0 +1,57 @@
+{
+  "best_epoch": 3,
+  "best_macro_f1": 0.8824166375141688,
+  "best_macro_f2": 0.8777514252870692,
+  "confusion_matrix": [
+    [
+      3765,
+      51,
+      242
+    ],
+    [
+      56,
+      1825,
+      367
+    ],
+    [
+      353,
+      104,
+      3543
+    ]
+  ],
+  "classification_report": {
+    "normal": {
+      "precision": 0.9020124580737902,
+      "recall": 0.9277969443075407,
+      "f1-score": 0.9147230320699709,
+      "support": 4058.0
+    },
+    "sexy": {
+      "precision": 0.9217171717171717,
+      "recall": 0.8118327402135231,
+      "f1-score": 0.8632923368022706,
+      "support": 2248.0
+    },
+    "nude": {
+      "precision": 0.8533236994219653,
+      "recall": 0.88575,
+      "f1-score": 0.869234543670265,
+      "support": 4000.0
+    },
+    "accuracy": 0.8861828061323501,
+    "macro avg": {
+      "precision": 0.8923511097376423,
+      "recall": 0.8751265615070212,
+      "f1-score": 0.8824166375141688,
+      "support": 10306.0
+    },
+    "weighted avg": {
+      "precision": 0.8874133082254515,
+      "recall": 0.8861828061323501,
+      "f1-score": 0.8858495451147396,
+      "support": 10306.0
+    }
+  },
+  "checkpoint_path": "checkpoints/convnext_sexynude_hardneg_best.pt",
+  "hard_negative_count_added": 813
+}

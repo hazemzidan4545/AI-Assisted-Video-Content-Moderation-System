@@ -1,0 +1,2 @@
+epoch,train_loss,val_mae,endpoint_macro_f1,endpoint_accuracy,best_t1,best_t2,normal_correct,normal_total,extreme_correct,extreme_total,medium_prediction_count,score_mean,score_std,peak_cuda_memory_gb,confusion_matrix_3class
+1,0.23934665479622816,0.31899335980415344,0.8562782548754064,0.8333694005626487,0.65,1.55,3658,4468,4044,4774,499,1.04359769821167,0.9278730154037476,0.2645688056945801,"[[3658, 235, 575], [0, 0, 0], [466, 264, 4044]]"
